@@ -1,19 +1,193 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TimeLockVault</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:
+radial-gradient(circle at top right,#24104a,#020c3b 60%);
+color:white;
+font-family:Arial,sans-serif;
+padding:60px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+h1{
+font-size:56px;
+margin-bottom:14px;
+}
+
+.subtitle{
+color:#d0d6ff;
+margin-bottom:40px;
+}
+
+.section{
+margin-top:45px;
+}
+
+h2{
+margin-bottom:18px;
+font-size:40px;
+}
+
+p{
+line-height:1.7;
+margin-bottom:20px;
+}
+
+ul{
+padding-left:22px;
+}
+
+li{
+margin-bottom:12px;
+line-height:1.6;
+}
+
+.footer{
+display:flex;
+justify-content:space-between;
+margin-top:80px;
+gap:50px;
+}
+
+.label{
+font-size:12px;
+letter-spacing:2px;
+opacity:.7;
+margin-bottom:8px;
+}
+
+a{
+color:white;
+}
+
+</style>
 </head>
 
-<body style="font-family:sans-serif;text-align:center;padding:80px">
+<body>
+
+<div class="container">
+
 <h1>TimeLockVault</h1>
 
-<p>
+<p class="subtitle">
 A decentralized time-locked vault protocol built on OPN Chain.
 </p>
 
+<div class="section">
+
 <p>
-Smart contract deployed and source available on GitHub.
+Users deposit assets into a vault and define a lock period.
+Withdrawals remain restricted until the unlock condition is satisfied.
+Current development emphasizes source transparency, on-chain validation,
+and contract behavior testing.
 </p>
+
+</div>
+
+
+<div class="section">
+
+<h2>Q1 : Current Stage</h2>
+
+<ul>
+<li>Deploy TimeLockVault contract on OPN Chain</li>
+<li>Validate lock duration and withdrawal conditions</li>
+<li>Complete source publication and contract transparency</li>
+<li>Perform initial user testing</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>Q2</h2>
+
+<ul>
+<li>Introduce configurable lock periods</li>
+<li>Add scheduled withdrawal execution</li>
+<li>Improve contract event monitoring</li>
+<li>Reduce storage and gas overhead</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>Q3</h2>
+
+<ul>
+<li>Support multiple vault lock profiles</li>
+<li>Build lightweight activity dashboard</li>
+<li>Expand contract testing coverage</li>
+<li>Prepare external security review</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>Long Term</h2>
+
+<ul>
+<li>Evolve into a programmable asset custody protocol</li>
+<li>Enable integration with external applications</li>
+<li>Support advanced release and scheduling mechanisms</li>
+</ul>
+
+</div>
+
+
+<div class="footer">
+
+<div>
+
+<div class="label">
+DEMO
+</div>
+
+<a href="https://opn-timelockvault.vercel.app">
+https://opn-timelockvault.vercel.app
+</a>
+
+</div>
+
+
+<div>
+
+<div class="label">
+REPOSITORY
+</div>
+
+<a href="https://github.com/Eliseunaim/opn-timelockvault">
+https://github.com/Eliseunaim/opn-timelockvault
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </body>
 </html>
+```
